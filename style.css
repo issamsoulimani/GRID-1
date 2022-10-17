@@ -1,0 +1,38 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.grid{
+	text-align: center;
+	font-weight: bold;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: 10% 78% 10%;
+	grid-gap: 1% 1%;
+	grid-template-areas: 
+	"head head head head head head head head nav nav"
+	"side side main main main main main main main main"
+	"foot foot foot foot foot foot foot foot foot foot"
+}
+.grid .head{
+	background-color: blue;
+	grid-area: head;
+}
+.grid .nav{
+	background-color: crimson;
+	grid-area: nav;
+}
+.grid .side{
+	background-color: yellow;
+	grid-area: side;
+}
+.grid .main{
+	background-color: orange;
+	grid-area: main;
+}
+.grid .foot{
+	background-color: green;
+	grid-area: foot;
+}
